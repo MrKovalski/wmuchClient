@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="auth-buttons buttons">
+            <a [routerLink]="['/login']"
+            routerLinkActive="active"
+            class="button is-white">LOG IN</a>
+            <a [routerLink]="['/register']"
+            routerLinkActive="active" class="button is-danger">SIGN UP</a>
+    </div>
+    <div class="content">
+        <h1 class="landing-title title is-1">
+           <span>wmuch</span> - track your work time
+        </h1>
+        <p class="subtitle is-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sequi qui harum nisi error numquam, voluptatibus facere. Praesentium voluptatem hic laborum natus architecto iure enim culpa eaque, deleniti quae tempora!
+        </p>
+        <a class="button is-danger call-to-action" [routerLink]="['/register']"
+        routerLinkActive="active">REGISTER</a>
+    </div>
+    <div class="landing-img-container">
+        <img class="landing-img" src="./assets/images/landing.png" alt="wmuch landing image">
+    </div>
+</div>

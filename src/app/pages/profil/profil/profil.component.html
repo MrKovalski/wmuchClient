@@ -1,0 +1,43 @@
+<div class="container">
+
+<div  class="my-loader">
+        <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
+        <div class="loading wave">
+        Loading
+        </div>
+</div>
+
+<div class="container level">
+        <div class="content level-item">
+           <div class="field">
+                <!-- name -->
+                <label for="name" class="label">Name</label>
+                <div class="control"><input type="text" name="name" placeholder="Your Name" class="input"></div>
+                <!-- email -->
+                <label for="email" class="label">Email</label>
+                <div class="control"><input type="email" name="email" placeholder="Email" class="input"></div>
+                <!-- password -->
+                <label for="password" class="label">Password</label>
+                <div class="control"><input type="password" name="password" placeholder="Password" class="input"></div>
+                <!-- hour rate -->
+                <label for="hourRate" class="label">Hour rate</label>
+                <div class="control"><input type="text" name="hourRate" placeholder="RSD/hour" class="input"></div>
+                <!-- work status -->
+                <label for="status" class="label">Work status</label>
+                <div class="control">
+                    <div class="select">
+                        <select name="status" id="">
+                            <option value="1">Active</option>
+                            <option value="0">On vacation</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- submit -->
+                <button
+
+            class="button is-success is-large">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

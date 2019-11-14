@@ -1,0 +1,63 @@
+$button-accent: #DB4A69;
+$button-primary: #353A85;
+
+%violet-border{
+    border: solid 3px #353A85;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.is-danger{
+    background-color: $button-accent;
+}
+
+.auth-buttons{
+
+    grid-area: 1 / 1 / 2 / 3;
+    margin-left: auto;
+
+    .button{
+        margin: 15px;
+    }
+
+}
+.content{
+    grid-area: 3 / 1 / 10 / 2;
+
+    justify-self: center;
+    margin: 30px 5vw 0px 5vw;
+
+    .control{
+        margin-bottom: 20px;
+        width: 40vw;
+        input{
+            @extend %violet-border;
+            height: 60px;
+                   
+        }
+
+            
+    }
+
+    button{
+        width: 40vw;
+        height: 10vh;
+        background-color: $button-primary;
+    }    
+
+}
+.landing-img-container{
+    grid-area: 3 / 2 / 10 / 2;
+    .landing-image{
+        margin-top: 40vh;
+    }
+     
+}
+

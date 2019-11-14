@@ -1,0 +1,32 @@
+<div class="container">
+        <div class="auth-buttons buttons">
+                <a [routerLink]="['/login']"
+                routerLinkActive="active"
+                class="button is-white">LOG IN</a>
+                <a [routerLink]="['/register']"
+                routerLinkActive="active"
+                class="button is-danger">SIGN UP</a>
+        </div>
+        <div class="content">
+           <div class="field">
+              <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm" >
+                <!-- email -->
+                <label for="email" class="label">Email</label>
+                <div class="control"><input type="email" id="email" [(ngModel)]="user.email" #email="ngModel" name="email" placeholder="Your email..." class="input"></div>
+                <!-- password -->
+                <label for="password" class="label">Password</label>
+                <div class="control"><input type="password" id="password" [(ngModel)]="user.password" #password="ngModel" name="password" placeholder="Password" class="input"></div>
+
+                <!-- submit -->
+                <button
+                [routerLink]="['/work']"
+                routerLinkActive="active"
+            class="button is-success is-large">Login</button>
+              </form>
+            </div>
+        </div>
+        <div class="landing-img-container">
+            <img class="landing-img" src="./assets/images/landing.png" alt="wmuch landing image">
+        </div>
+</div>
+

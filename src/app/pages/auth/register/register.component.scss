@@ -1,0 +1,62 @@
+@import '../../../../assets/variables';
+
+%violet-border{
+    border: solid 3px #353A85;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.is-danger{
+    background-color: $button-accent;
+}
+
+.auth-buttons{
+
+    grid-area: 1 / 1 / 2 / 3;
+    margin-left: auto;
+
+    .button{
+        margin: 15px;
+    }
+
+}
+.content{
+    grid-area: 2 / 1 / 10 / 2;
+
+    justify-self: center;
+    margin: 30px;
+
+    .control{
+        margin-bottom: 20px;
+        width: 30vh;
+        input{
+            @extend %violet-border;
+        }
+        
+        select{
+            @extend %violet-border;
+        }
+
+        
+    }
+
+    button{
+        width: 30vh;
+        background-color: $button-primary;
+    }    
+
+}
+.landing-img-container{
+    .landing-image{
+        margin-top: 60px;
+    }
+     
+}
+
