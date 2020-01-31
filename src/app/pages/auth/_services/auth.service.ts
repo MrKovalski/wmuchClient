@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 import { environment } from  '../../../../environments/environment';
 import { User } from '../user';
 
-const httpOptions  = {
+const httpOptions   = {
   headers: new  HttpHeaders({
           'Content-Type': 'application/json'
   })
@@ -18,8 +18,7 @@ const httpOptions  = {
 export class AuthService {
   public  currentUser:  User;
   private  readonly  apiUrl  =  environment.apiUrl;
-  private  registerUrl  =  this.apiUrl  +  '/register';
-  private  loginUrl  =  this.apiUrl  +  '/login';
+
 
   constructor(
     private  http:  HttpClient,
@@ -27,6 +26,10 @@ export class AuthService {
     ) {
 
   }
+
+  registerUrl = "api.wmuch.laravel/register"
+  loginUrl = "api.wmuch.laravel/login"
+
   onRegister(user: User): Observable<User> {
     const request  =  JSON.stringify(
             {

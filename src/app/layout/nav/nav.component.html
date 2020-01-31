@@ -1,3 +1,6 @@
-<router-outlet></router-outlet>
-
-<h1>nav works...</h1>
+<div class="container">
+  <div class="auth-buttons buttons">
+    <a [routerLink]="['/login']" routerLinkActive="active" class="button is-white">LOG IN</a>
+    <a [routerLink]="['/register']" routerLinkActive="active" class="button is-danger">SIGN UP</a>
+  </div>
+</div>
